@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+case "$1" in
+    configure)
+        if update-alternatives --query x-cursor-theme | grep -qs "Status: auto"; then
+            update-alternatives --set x-cursor-theme /usr/share/icons/DMZ-White/cursor.theme
+        fi
+        ;;
+
+    abort-upgrade|abort-deconfigure|abort-remove)
+        ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" 1>&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+exit 0

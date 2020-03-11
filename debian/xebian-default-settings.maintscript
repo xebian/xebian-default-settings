@@ -1,0 +1,6 @@
+rm_conffile /etc/skel/.Xdefaults 16.01~
+rm_conffile /etc/skel/.config/Trolltech.conf 16.01~
+rm_conffile /etc/skel/.xscreensaver 16.01~
+rm_conffile /etc/xdg/xdg-xebian/orage/oragerc 17.09~
+rm_conffile /etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfprint.xml 19.10~
+rm_conffile /etc/xdg/xdg-xebian/autostart/xfce4-tips-autostart.desktop 19.10~

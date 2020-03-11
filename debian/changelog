@@ -1,0 +1,189 @@
+xebian-default-settings (20.03) unstable; urgency=medium
+
+  [ Simon Steinbeiß ]
+  * xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml:
+    - Set the default value for fadeout in xfce4-notifyd
+  * xfce4/panel/default.xml: Set the square-icons option to true
+
+  [ Sean Davis ]
+  * d/xebian-default-settings.gsettings-override:
+    - Set GNOME/GTK 3 dconf keys for fonts
+  * xfce4/panel/default.xml:
+    - Add separator and hide window list handle for cleaner panel appearance
+    - Remove enter/leave opacity setting
+  * xfce4/whiskermenu/defaults.rc: Add file search custom command (-)
+  * xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    - Add shortcut for xfce4-screenshooter region capture (Shift+Print)
+  * xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml:
+    - Set default inactivity mode to Suspend on AC and battery
+  * xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml:
+    - Set xfce4-session client priority from upstream
+    - Drop session splash property, no longer available in 4.14
+  * Thunar/uca.xml.in:
+    - Enable startup-notify in Thunar.
+    - Add Terminal (F4) and Find (Primary+Shift+F) shortcuts to Thunar
+  * u/s/x/applications/Thunar(,-bulk-rename).desktop:
+    - Removed, Thunar File Manager will now be displayed in
+      the menu again
+  * u/s/x/xebian.desktop:
+    - Add DesktopNames=XFCE to correctly set XDG_CURRENT_DESKTOP
+  * Removed obsolete configuration files:
+    - etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfprint.xml
+    - etc/xdg/xdg-xebian/autostart/xfce4-tips-autostart.desktop
+
+  [ Unit 193 ]
+  * xfce4/panel/default.xml:
+    - Add StatusNotifier to the panel.
+    - Drop the bottom panel.
+  * d/xebian-default-settings.gsettings-override:
+    - Set package-update-indicator to use synaptic for updates.
+  * d/xebian-default-settings.gconf-defaults, d/rules: Drop dh_gconf.
+  * d/compat, d/control:
+    - Drop d/compat in favor of debhelper-compat, bump to 12.
+  * d/control:
+    - R³: no.
+    - elementary-shimmer-icon-theme → elementary-xfce-icon-theme,
+      migration complete.
+  * Update Standards-Version to 4.5.0.
+
+ -- Unit 193 <unit193@ubuntu.com>  Tue, 10 Mar 2020 20:11:52 -0400
+
+xebian-default-settings (18.05) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.1.4.
+  * d/compat, d/control: Bump dh compat to 11.
+  * d/control: Replace recommend.
+    - elementary-xfce-icon-theme → elementary-shimmer-icon-theme
+  * d/xebian-default-settings.post(inst,rm):
+    - Set cursor theme to DMZ-White via alternatives system.
+  * etc/X11/Xsession.d/60x11-common_xdg_path:
+    - Update from upstream.
+  * etc/xdg/xdg-xebian/xfce4/panel/default.xml:
+    - Remove actions plugin from top panel.
+  * etc/xdg/xdg-xebian/xfce4/panel/default.xml,
+    etc/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc:
+    - Remove exo-mail-reader from launcher and menu, no mail client installed.
+  * etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml:
+    - Set cursor theme to system default.
+
+ -- Unit 193 <unit193@ubuntu.com>  Wed, 09 May 2018 01:50:13 -0400
+
+xebian-default-settings (17.09) unstable; urgency=medium
+
+  * Run wrap-and-sort.
+  * Bump Standards-Version to 4.1.0.
+  * d/control:
+    - Recommend dmz-cursor-theme.
+    - Drop useless Provides and Pre-Depends.
+    - Create the x11-xdg-session package.
+    - Replace the (faulty) depend on x11-common with x11-xdg-session.
+  * d/copyright, etc/xdg/xdg-xebian/compton.conf,
+    etc/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc,
+    - Use https where possible.
+  * d/xebian-default-settings.gsettings-override: Include onboard settings.
+  * d/xebian-default-settings.maintscript, etc/xdg/xdg-xebian/orage/oragerc:
+    - Drop and remove.
+  * d/x11-xdg-session.install:
+    - Install /etc/X11/Xsession.d/60x11-common_xdg_path
+  * etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml:
+    - Switch to DMZ-White cursor theme.
+  * usr/share/lightdm/lightdm.conf.d/60-xebian.conf:
+    - Allow users to select usernames at login.
+
+ -- Unit 193 <unit193@ubuntu.com>  Tue, 19 Sep 2017 00:39:35 -0400
+
+xebian-default-settings (17.02) unstable; urgency=medium
+
+  * etc/X11/Xsession.d/56xebian-session: Update for new Qt5 style var.
+
+ -- Unit 193 <unit193@ubuntu.com>  Tue, 21 Feb 2017 20:18:51 -0500
+
+xebian-default-settings (16.09) unstable; urgency=medium
+
+  * d/control: Recommend numix-gtk-theme and elementary-xfce-icon-theme.
+  * etc/xdg/xdg-xebian/xfce4/helpers.rc: iceweasel → firefox.
+  * etc/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc:
+    - Change favorite: abiword → libreoffice-writer.
+    - Change favorite: gnumeric → libreoffice-calc.
+
+ -- Unit 193 <unit193@ubuntu.com>  Mon, 12 Sep 2016 15:40:58 -0400
+
+xebian-default-settings (16.04) unstable; urgency=medium
+
+  * etc/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc:
+    - Update to use the new xebian-logo menu icon.
+  * Update standards-version to 3.9.8.
+
+ -- Unit 193 <unit193@ubuntu.com>  Sun, 17 Apr 2016 14:12:07 -0400
+
+xebian-default-settings (16.03) unstable; urgency=medium
+
+  * d/xebian-default-settings.gsettings-override,
+    etc/xdg/xdg-xebian/xfce4/terminal/terminalrc:
+    - Update typo: Noto Sans Mono → Noto Mono.
+
+ -- Unit 193 <unit193@ubuntu.com>  Tue, 15 Mar 2016 18:19:34 -0400
+
+xebian-default-settings (16.02.1) unstable; urgency=medium
+
+  [ Sean Davis / Unit 193 ]
+  * Update font to Noto Sans:
+    - debian/control
+    - debian/xebian-default-settings.gsettings-override
+    - etc/xdg/xdg-xebian/xfce4/terminal/terminalrc
+    - etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+    - etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+    - usr/share/lightdm/lightdm-gtk-greeter.conf.d/10-xebian-default.conf
+
+  [ Unit 193 ]
+  * Update standards-version to 3.9.7.
+  * d/control: Move fonts to recommends.
+  * d/control: Move lightdm-gtk-greeter from 'Recommends' to 'Enhances'.
+  * d/control: Add xfce4 to 'Enhances', general config changes.
+  * d/control: Add mousepad to 'Enhances'.
+    - Shipping policykit file to allow us to call mousepad with pkexec.
+
+ -- Unit 193 <unit193@ubuntu.com>  Thu, 25 Feb 2016 19:38:49 -0500
+
+xebian-default-settings (16.02) unstable; urgency=medium
+
+  * etc/xdg/xdg-xebian/xfce4/panel/default.xml:
+    - Fix panel items incorrectly ending up on the wrong panel or disappearing.
+
+ -- Unit 193 <unit193@ubuntu.com>  Mon, 01 Feb 2016 22:54:35 -0500
+
+xebian-default-settings (16.01) unstable; urgency=medium
+
+  * Pull translation updates from Launchpad.
+  * usr/share/lightdm/lightdm-gtk-greeter.conf.d/10-xebian-default.conf:
+    - Just set the theme, font, and background.
+  * usr/share/lightdm/lightdm.conf.d/60-xebian.conf:
+    - Update to current lightdm syntax.
+  * usr/share/xebian/applications/defaults.list: Remove, unmaintained.
+  * etc/xdg/xdg-xebian/menus/xfce-applications.menu,
+    etc/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc,
+    - Drop usr/share/xebian/applications/xfhelp4.desktop.
+  * etc/X11/Xsession.d/56xebian-session:
+    - Restrict changes to the 'xebian' session only.
+    - Set GTK_OVERLAY_SCROLLING=0 to disable GTK 3.16 overlay scrollbars.
+    - Set QT_STYLE_OVERRIDE=gtk so Qt5 apps will use GTK style.
+  * etc/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml,
+    etc/xdg/xdg-xebian/xfce4/panel/default.xml:
+    - Change from applicationsmenu to whiskermenu.
+  * etc/xdg/xdg-xebian/xfce4/panel/default.xml:
+    - Move xfce4-powermanager-plugin to the left of the systray.
+    - Add xfce4-pulseaudio-plugin to the panel, right of -powermanager.
+  * etc/skel/*: Remove.
+
+ -- Unit 193 <unit193@ubuntu.com>  Fri, 29 Jan 2016 00:38:49 -0500
+
+xebian-default-settings (15.04.5) unstable; urgency=medium
+
+  * Fork for Xebian..
+    - Remove xubuntu-website.desktop and xubuntu-contribute.desktop.
+    - Update xfce4-applications.menu for those removals, and USC.
+    - Change theme to Numix.
+    - Change from Whiskermenu to Applicationsmenu.
+    - Rebrand to Xebian.
+
+ -- Unit 193 <unit193@ubuntu.com>  Sun, 10 May 2015 20:16:08 -0400

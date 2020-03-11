@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+        ;;
+
+    purge)
+        if update-alternatives --query x-cursor-theme | grep -qs "Value: /usr/share/icons/DMZ-White/cursor.theme"; then
+                update-alternatives --auto x-cursor-theme
+        fi
+        ;;
+
+    upgrade|failed-upgrade|disappear)
+        ;;
+
+    abort-install|abort-upgrade)
+        ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" 1>&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+exit 0

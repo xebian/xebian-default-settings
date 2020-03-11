@@ -1,0 +1,30 @@
+Source: xebian-default-settings
+Section: x11
+Priority: optional
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Build-Depends: debhelper-compat (= 12), intltool
+Rules-Requires-Root: no
+Standards-Version: 4.5.0
+
+Package: xebian-default-settings
+Architecture: all
+Depends: x11-xdg-session, xebian-artwork, ${misc:Depends}
+Recommends:
+ dmz-cursor-theme,
+ elementary-xfce-icon-theme,
+ fonts-noto-hinted,
+ fonts-noto-mono,
+ libxfce4ui-utils,
+ numix-gtk-theme,
+ xfce4-session
+Enhances: lightdm-gtk-greeter, mousepad, xfce4
+Description: default settings for the Xebian desktop
+ This package contains the default settings used by Xebian.
+
+Package: x11-xdg-session
+Architecture: all
+Depends: ${misc:Depends}
+Description: xsession script to allow session specific configuration
+ This package drops an Xsession snippet that prepends the session name to
+ XDG_CONFIG_DIRS and XDG_DATA_DIRS, allowing one to override config
+ in a specific session without using nasty tricks like dpkg-divert.

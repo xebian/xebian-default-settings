@@ -1,0 +1,38 @@
+[apps.light-locker]
+late-locking=false
+lock-after-screensaver=0
+lock-on-suspend=true
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/xfce4/backdrops/xebian-wallpaper.png'
+
+[org.gnome.desktop.interface]
+gtk-theme='Numix'
+icon-theme='elementary-xfce-darker'
+font-name='Noto Sans 9'
+monospace-font-name='Monospace 10'
+
+[org.guido-berhoerster.code.package-update-indicator]
+update-command='synaptic-pkexec --dist-upgrade-mode'
+
+[org.onboard]
+layout='Compact'
+theme='Nightshade'
+key-label-font='Noto Sans'
+key-label-overrides=['RWIN:⌘:super-group', 'LWIN:⌘:super-group']
+xembed-onboard=true
+
+[org.onboard.window]
+docking-enabled=true
+force-to-top=true
+
+[org.xfce.mousepad.preferences.view]
+color-scheme='xebian_light'
+font-name='Noto Mono 10'
+use-default-monospace-font=false
+
+[org.xfce.mousepad.preferences.window]
+path-in-title=true
+
+[org.xfce.mousepad.state.search]
+direction=2
