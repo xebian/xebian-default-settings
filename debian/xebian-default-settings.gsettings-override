@@ -1,8 +1,3 @@
-[apps.light-locker]
-late-locking=false
-lock-after-screensaver=0
-lock-on-suspend=true
-
 [org.gnome.desktop.background]
 picture-uri='file:///usr/share/xfce4/backdrops/xebian-wallpaper.png'
 
@@ -33,6 +28,3 @@ use-default-monospace-font=false
 
 [org.xfce.mousepad.preferences.window]
 path-in-title=true
-
-[org.xfce.mousepad.state.search]
-direction=2
