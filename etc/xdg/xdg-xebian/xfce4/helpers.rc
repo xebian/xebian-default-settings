@@ -1,4 +1,4 @@
 WebBrowser=firefox
 MailReader=icedove
-FileManager=Thunar
+FileManager=thunar
 TerminalEmulator=xfce4-terminal
