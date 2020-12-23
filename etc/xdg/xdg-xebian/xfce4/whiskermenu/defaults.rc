@@ -1,4 +1,4 @@
-favorites=exo-web-browser.desktop,exo-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,pidgin.desktop,exo-terminal-emulator.desktop
+favorites=xfce4-web-browser.desktop,xfce4-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,pidgin.desktop,xfce4-terminal-emulator.desktop
 button-title=Applications Menu
 button-icon=xebian-logo
 show-button-title=false

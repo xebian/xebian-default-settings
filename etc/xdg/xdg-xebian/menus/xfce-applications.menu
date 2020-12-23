@@ -8,16 +8,16 @@
     <DefaultDirectoryDirs/>
 
     <Include>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>xfce4-web-browser.desktop</Filename>
+        <Filename>xfce4-mail-reader.desktop</Filename>
         <Filename>xfce-settings-manager.desktop</Filename>
         <Filename>xfce4-about.desktop</Filename>
         <Filename>xfce4-session-logout.desktop</Filename>
     </Include>
 
     <Layout>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>xfce4-web-browser.desktop</Filename>
+        <Filename>xfce4-mail-reader.desktop</Filename>
         <Separator/>
         <Filename>xfce-settings-manager.desktop</Filename>
         <Separator/>
@@ -104,8 +104,8 @@
         </Include>
         <Exclude>
             <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
+                <Filename>xfce4-mail-reader.desktop</Filename>
+                <Filename>xfce4-web-browser.desktop</Filename>
             </Or>
         </Exclude>
     </Menu>
@@ -126,8 +126,8 @@
         </Include>
         <Exclude>
             <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
+                <Filename>xfce4-mail-reader.desktop</Filename>
+                <Filename>xfce4-web-browser.desktop</Filename>
                 <Filename>xfce-settings-manager.desktop</Filename>
             </Or>
         </Exclude>
