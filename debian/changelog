@@ -1,3 +1,30 @@
+xebian-default-settings (20.12) unstable; urgency=medium
+
+  * usr/share/polkit-1/actions/*: Drop, mousepad ships its own policykit rules.
+  * d/control, d/copyright: Update my email address.
+  * d/xebian-default-settings.gsettings-override:
+    - Drop light-locker and deprecated mousepad key.
+  * e/modprobe.d/blacklist-pcspkr.conf:
+    - Blacklist pcspkr due to making an annoying 'beep' on many events.
+  * e/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml:
+    - Set Gtk/CursorThemeName to DMZ-White.
+  * e/xdg/xdg-xebian/xfce4/panel/default.xml:
+    - Migrate statusnotifier to systray and remove from panel.
+  * e/xdg/xdg-xebian/xfce4/helpers.rc:
+    - Change FileManager key to lowercase thunar to fix defaults.
+  * e/xdg/xdg-xebian/menus/xfce-applications.menu,
+    e/xdg/xdg-xebian/xfce4/whiskermenu/defaults.rc:
+    - Replace exo-* with xfce4-* commands.
+  * e/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+    - Exclude applications menu on desktop right click.
+  * e/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/thunar.xml:
+    - Enabled opening folders in new tab on middle click.
+  * e/xdg/xdg-xebian/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    - Re-sync keybinds with upstream Xfce, sort.
+  * Update Standards-Version to 4.5.1.
+
+ -- Unit 193 <unit193@xebian.org>  Wed, 23 Dec 2020 19:03:37 -0500
+
 xebian-default-settings (20.03) unstable; urgency=medium
 
   [ Simon Steinbeiß ]
