@@ -21,4 +21,8 @@ if [ -n "$DESKTOP_SESSION" ]; then
       fi
      export XDG_DATA_DIRS
   fi
+  if [ -n "$DBUS_SESSION_BUS_ADDRESS" ] && \
+    command -v dbus-update-activation-environment >/dev/null; then
+      dbus-update-activation-environment --verbose --systemd XDG_CONFIG_DIRS XDG_DATA_DIRS
+  fi
 fi

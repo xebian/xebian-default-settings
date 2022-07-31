@@ -4,4 +4,8 @@ if [ "$DESKTOP_SESSION" = xebian ]; then
     export GTK_OVERLAY_SCROLLING=0
     # Qt5 apps to use GTK style
     export QT_QPA_PLATFORMTHEME=gtk2
+    if [ -n "$DBUS_SESSION_BUS_ADDRESS" ] && \
+        command -v dbus-update-activation-environment >/dev/null; then
+            dbus-update-activation-environment --verbose --systemd GTK_OVERLAY_SCROLLING QT_QPA_PLATFORMTHEME
+    fi
 fi
