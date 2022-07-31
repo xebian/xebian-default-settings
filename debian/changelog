@@ -1,3 +1,19 @@
+xebian-default-settings (22.07) unstable; urgency=medium
+
+  [ Krytarik Raido ]
+  * Switch from Numix to Greybird.
+
+  [ Unit 193 ]
+  * e/X11/Xsession.d/(56xebian-session,60x11-common_xdg_path):
+    - Inject the variables set into the session via
+      dbus-update-activation-environment.
+  * d/control:
+    - Bump DH compat to 13.
+    - Set Vcs-* fields.
+  * Update Standards-Version to 4.6.1.
+
+ -- Unit 193 <unit193@xebian.org>  Sun, 31 Jul 2022 18:02:51 -0400
+
 xebian-default-settings (20.12) unstable; urgency=medium
 
   * usr/share/polkit-1/actions/*: Drop, mousepad ships its own policykit rules.
