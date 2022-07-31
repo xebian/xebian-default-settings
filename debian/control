@@ -14,8 +14,8 @@ Recommends:
  elementary-xfce-icon-theme,
  fonts-noto-hinted,
  fonts-noto-mono,
+ greybird-gtk-theme,
  libxfce4ui-utils,
- numix-gtk-theme,
  xfce4-session
 Enhances: lightdm-gtk-greeter, mousepad, xfce4
 Description: default settings for the Xebian desktop
