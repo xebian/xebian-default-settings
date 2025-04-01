@@ -3,7 +3,7 @@ picture-uri='file:///usr/share/xfce4/backdrops/xebian-wallpaper.png'
 
 [org.gnome.desktop.interface]
 gtk-theme='Greybird-dark'
-icon-theme='elementary-xfce-darker'
+icon-theme='elementary-xfce'
 font-name='Noto Sans 9'
 monospace-font-name='Monospace 10'
 
