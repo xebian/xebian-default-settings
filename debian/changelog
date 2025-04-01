@@ -1,3 +1,16 @@
+xebian-default-settings (25.04) unstable; urgency=medium
+
+  * d/control: Recommend fonts-noto-core instead of the transitional package.
+  * Convert xfce4-terminal config to xfconf.
+  * Fix selected icon theme, Elementary Xfce has dropped the dark(er) variants.
+  * Refresh default keybinds.
+    + Use long options and canonical names.
+    + Add xfce4-find-cursor, remove pidgin binds.
+  * d/copyright: Bump years.
+  * Update Standards-Version to 4.7.2.
+
+ -- Unit 193 <unit193@xebian.org>  Tue, 01 Apr 2025 04:08:16 -0400
+
 xebian-default-settings (22.07) unstable; urgency=medium
 
   [ Krytarik Raido ]
