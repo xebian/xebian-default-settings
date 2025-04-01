@@ -3,13 +3,13 @@
 <channel name="xfce4-keyboard-shortcuts" version="1.0">
   <property name="commands" type="empty">
     <property name="default" type="empty">
-      <property name="&lt;Alt&gt;F2" type="string" value="xfrun4">
+      <property name="&lt;Alt&gt;F2" type="string" value="xfce4-appfinder --collapsed">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
+      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter --window"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="exo-open --launch FileManager"/>
@@ -17,14 +17,14 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
-      <property name="&lt;Super&gt;1" type="string" value="pidgin"/>
+      <property name="Print" type="string" value="xfce4-screenshooter --fullscreen"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter --region"/>
+      <property name="&lt;Super&gt;F1" type="string" value="xfce4-find-cursor"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;f" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;m" type="string" value="exo-open --launch MailReader"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
-      <property name="&lt;Super&gt;r" type="string" value="xfrun4">
+      <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder --collapsed">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Super&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
@@ -34,7 +34,7 @@
       <property name="XF86Explorer" type="string" value="exo-open --launch FileManager"/>
       <property name="XF86HomePage" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
-      <property name="XF86Messenger" type="string" value="pidgin"/>
+      <property name="XF86Music" type="string" value="vlc"/>
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
     </property>
   </property>
