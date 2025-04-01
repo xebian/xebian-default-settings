@@ -14,7 +14,7 @@ Depends: x11-xdg-session, xebian-artwork, ${misc:Depends}
 Recommends:
  dmz-cursor-theme,
  elementary-xfce-icon-theme,
- fonts-noto-hinted,
+ fonts-noto-core,
  fonts-noto-mono,
  greybird-gtk-theme,
  libxfce4ui-utils,
